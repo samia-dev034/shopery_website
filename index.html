@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SHOPERY - EcoBazar Organic Grocery Store</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="assests/style.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="top-bar py-1">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <small>📍 Store Locations: 88... Middle, Chicago, USA</small>
+
+        <div>
+          <small
+            >ENG ▾ &nbsp;&nbsp; USD ▾ &nbsp;&nbsp;
+            <a
+              id="authBtn"
+              href="#"
+              class="text-decoration-none text-muted fw-semibold"
+              >Sign In / Sign Up</a
+            ></small
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="main-navbar">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <!-- Logo -->
+          <div class="col-lg-3 col-md-3 col-6">
+            <div class="logo">🌿 <span>EcoBazar</span></div>
+          </div>
+
+          <!-- Search -->
+          <div class="col-lg-6 col-md-6 col-12 order-3 order-md-2">
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" placeholder="Search products..." />
+              <button>Search</button>
+            </div>
+          </div>
+
+          <!-- Icons / Cart -->
+          <div class="col-lg-3 col-md-3 col-6 order-2 order-md-3">
+            <div
+              class="nav-icons d-flex align-items-center justify-content-end gap-3"
+            >
+              <span
+                id="wishlistIconBtn"
+                class="position-relative me-2"
+                style="cursor: pointer"
+                title="Wishlist"
+              >
+                ♡
+                <span
+                  id="wishlistBadge"
+                  class="badge bg-success rounded-circle position-absolute top-0 start-100 translate-middle"
+                  style="font-size: 9px; display: none"
+                  >0</span
+                >
+              </span>
+
+              <div
+                id="cartIconBtn"
+                class="d-flex align-items-center gap-2"
+                style="cursor: pointer"
+                title="Open Cart"
+              >
+                <span style="font-size: 23px">🛒</span>
+                <div class="cart-text">
+                  <small>Shopping cart</small>
+                  <strong id="headerCartTotal">$0.00</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DARK MENU BAR -->
+    <div class="menu-bar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <button
+            class="navbar-toggler my-2 ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+            aria-controls="mainMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home ▾</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop ▾</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages ▾</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog ▾</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="phone px-3 py-2">📞 (219) 555-0114</div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BANNERS SECTION -->
+    <div class="container">
+      <div class="row banner-row g-3">
+        <!-- Big Banner -->
+        <div class="col-lg-8 col-12 big-banner">
+          <img
+            src="assests/images/Bannar Big.png"
+            alt="Big Banner"
+            class="img-fluid"
+          />
+        </div>
+
+        <!-- Small Banners -->
+        <div class="col-lg-4 col-12 banners">
+          <img
+            class="banner1 img-fluid mb-2"
+            src="assests/images/Bannar.png"
+            alt="Banner"
+          />
+          <img
+            class="banner2 img-fluid"
+            src="assests/images/Bannar2.png"
+            alt="Banner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES ROW -->
+    <div class="container pt-5">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+          <img
+            class="icon"
+            src="assests/images/delivery-truck 1.png"
+            alt="Delivery"
+          />
+          <div class="flex-column">
+            <div class="head">Free Shipping</div>
+            <div class="sub-head">Free shipping on all your order</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+          <img
+            class="icon"
+            src="assests/images/headphones 1.png"
+            alt="Support"
+          />
+          <div class="flex-column">
+            <div class="head">Customer Support 24/7</div>
+            <div class="sub-head">Instant access to Support</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+          <img
+            class="icon"
+            src="assests/images/shopping-bag.png"
+            alt="Payment"
+          />
+          <div class="flex-column">
+            <div class="head">100% Secure Payment</div>
+            <div class="sub-head">We ensure your money is save</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+          <img class="icon" src="assests/images/package.png" alt="Guarantee" />
+          <div class="flex-column">
+            <div class="head">Money-Back Guarantee</div>
+            <div class="sub-head">30 Days Money-Back Guarantee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPULAR CATEGORIES -->
+    <div class="container pt-5">
+      <div class="row g-3">
+        <div class="heading w-100 mb-2">Popular Categories</div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 1.png" alt="Fresh Fruit" />
+            <div class="img-name text-center">Fresh Fruit</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img
+              src="assests/images/products/image2.png"
+              alt="Fresh Vegetables"
+            />
+            <div class="img-name text-center">Fresh Vegetables</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image3.png" alt="Meat & Fish" />
+            <div class="img-name text-center">Meat & Fish</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 4.png" alt="Snacks" />
+            <div class="img-name text-center">Snacks</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 5.png" alt="Bevarages" />
+            <div class="img-name text-center">Bevarages</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img
+              src="assests/images/products/image 6.png"
+              alt="Beauty & Health"
+            />
+            <div class="img-name text-center">Beauty & Health</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img
+              src="assests/images/products/image 7.png"
+              alt="Bread & Bakery"
+            />
+            <div class="img-name text-center">Bread & Bakery</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 8.png" alt="Baking Needs" />
+            <div class="img-name text-center">Baking Needs</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 9.png" alt="Cooking" />
+            <div class="img-name text-center">Cooking</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img
+              src="assests/images/products/image 10.png"
+              alt="Diabetic Food"
+            />
+            <div class="img-name text-center">Diabetic Food</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img
+              src="assests/images/products/image 11.png"
+              alt="Dish Detergent"
+            />
+            <div class="img-name text-center">Dish Detergent</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card text-center">
+            <img src="assests/images/products/image 12.png" alt="Oil" />
+            <div class="img-name text-center">Oil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPULAR PRODUCTS -->
+    <div class="container pt-5">
+      <div class="row g-3">
+        <div class="heading w-100 mb-2">Popular Products</div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="1"
+          data-name="Green Apples"
+          data-price="14.99"
+          data-image="assests/images/products/apple.png"
+          data-category="Fresh Fruit"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <button class="sale-btn">Sale 50%</button>
+            <img src="assests/images/products/apple.png" alt="Green Apples" />
+            <div class="img-name text-center">Green Apples</div>
+            <div class="text-center price">
+              $14.99<span class="previous-price"> $20.99</span>
+            </div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="2"
+          data-name="Fresh Indian Malta"
+          data-price="20.00"
+          data-image="assests/images/products/orange.png"
+          data-category="Fresh Fruit"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/orange.png"
+              alt="Fresh Indian Malta"
+            />
+            <div class="img-name text-center">Fresh Indian Malta</div>
+            <div class="text-center price">$20.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="3"
+          data-name="Chinese cabbage"
+          data-price="12.00"
+          data-image="assests/images/products/cabbage.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/cabbage.png"
+              alt="Chinese cabbage"
+            />
+            <div class="img-name text-center">Chinese cabbage</div>
+            <div class="text-center price">$12.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="4"
+          data-name="Green Lettuce"
+          data-price="9.00"
+          data-image="assests/images/products/coliflower.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/coliflower.png"
+              alt="Green Lettuce"
+            />
+            <div class="img-name text-center">Green Lettuce</div>
+            <div class="text-center price">$9.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="5"
+          data-name="Egg Plant"
+          data-price="34.00"
+          data-image="assests/images/products/bringle.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/bringle.png" alt="Egg Plant" />
+            <div class="img-name text-center">Egg Plant</div>
+            <div class="text-center price">$34.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="6"
+          data-name="Big Potatoes"
+          data-price="20.00"
+          data-image="assests/images/products/potato.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/potato.png" alt="Big Potatoes" />
+            <div class="img-name text-center">Big Potatoes</div>
+            <div class="text-center price">$20.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="7"
+          data-name="Corn"
+          data-price="20.00"
+          data-image="assests/images/products/corn.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/corn.png" alt="Corn" />
+            <div class="img-name text-center">Corn</div>
+            <div class="text-center price">$20.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="8"
+          data-name="Fresh Cornflower"
+          data-price="12.00"
+          data-image="assests/images/products/cabbage2.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/cabbage2.png"
+              alt="Fresh Cornflower"
+            />
+            <div class="img-name text-center">Fresh Cornflower</div>
+            <div class="text-center price">$12.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="9"
+          data-name="Green Capsicum"
+          data-price="9.00"
+          data-image="assests/images/products/shimla.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <button class="sale-btn">Sale 50%</button>
+            <img
+              src="assests/images/products/shimla.png"
+              alt="Green Capsicum"
+            />
+            <div class="img-name text-center">Green Capsicum</div>
+            <div class="text-center price">
+              $9.00<span class="previous-price"> $20.99</span>
+            </div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-2"
+          data-product-id="10"
+          data-name="Green Chilli"
+          data-price="34.00"
+          data-image="assests/images/products/mirchi.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product text-center">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/mirchi.png" alt="Green Chilli" />
+            <div class="img-name text-center">Green Chilli</div>
+            <div class="text-center price">$34.00</div>
+            <div class="rating text-center">
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="stars bi bi-star-fill"></i>
+              <i class="grey-star bi bi-star-fill"></i>
+            </div>
+            <button
+              class="add-to-cart-btn btn btn-sm btn-outline-success mt-2 rounded-pill w-100"
+            >
+              <i class="bi bi-bag-plus me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEAL CONTAINER -->
+    <div class="container deal-container pt-5">
+      <div class="row g-3 w-100 m-0">
+        <!-- CARD 1 -->
+        <div class="position-relative col-12 col-md-4 deal-card">
+          <img
+            src="assests/images/blocks/Rectangle 1.png"
+            class="w-100"
+            alt="Best Deals"
+          />
+
+          <div
+            class="position-absolute top-0 start-50 translate-middle-x text-center card-text"
+          >
+            <div class="text-1">BEST DEALS</div>
+            <div class="text-2 text-nowrap">Sale of the Month</div>
+
+            <div class="count d-flex justify-content-center">
+              <div>
+                <span>00</span>
+                <small>DAYS</small>
+              </div>
+              <b>:</b>
+              <div>
+                <span>02</span>
+                <small>HOURS</small>
+              </div>
+              <b>:</b>
+              <div>
+                <span>18</span>
+                <small>MINS</small>
+              </div>
+              <b>:</b>
+              <div>
+                <span>46</span>
+                <small>SECS</small>
+              </div>
+            </div>
+
+            <button class="shop-btn">
+              Shop Now <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="position-relative col-12 col-md-4 deal-card">
+          <img
+            src="assests/images/blocks/Rectangle 2.png"
+            class="w-100"
+            alt="Low-Fat Meat"
+          />
+
+          <div
+            class="position-absolute top-0 start-50 translate-middle-x text-center card-text"
+          >
+            <div class="text-1">85% FAT FREE</div>
+            <div class="text-2 text-nowrap">Low-Fat Meat</div>
+
+            <div class="count d-flex justify-content-center align-items-center">
+              Started at
+              <span class="orange-price ms-1">$79.99</span>
+            </div>
+
+            <button class="shop-btn">
+              Shop Now <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="position-relative col-12 col-md-4 deal-card">
+          <img
+            src="assests/images/blocks/Rectangle 3.png"
+            class="w-100"
+            alt="Summer Sale"
+          />
+
+          <div
+            class="position-absolute top-0 start-50 translate-middle-x text-center card-text-3"
+          >
+            <div class="text-1-card-3">SUMMER SALE</div>
+            <div class="text-2-card-3 text-nowrap">100% Fresh Fruit</div>
+
+            <div
+              class="count-3 d-flex justify-content-center align-items-center"
+            >
+              Upto
+              <button class="text-btn ms-1">64% OFF</button>
+            </div>
+
+            <button class="shop-btn">
+              Shop Now <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOT DEALS SECTION -->
+    <div class="container hot-deals">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4>Hot Deals</h4>
+        <a href="#" class="shop-now-link">View All →</a>
+      </div>
+
+      <div class="row g-3">
+        <!-- BIG PRODUCT -->
+        <div
+          class="col-lg-5 col-12"
+          data-product-id="11"
+          data-name="Chinese cabbage"
+          data-price="12.00"
+          data-image="assests/images/products/appless.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="big-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <div class="badges">
+              <span>Sale 50%</span>
+              <span>Best Sale</span>
+            </div>
+
+            <img src="assests/images/products/apple.png" alt="Green apples" />
+
+            <button class="add-cart">Add to Cart 🛒</button>
+
+            <div class="product-info text-center">
+              <h6>Chinese cabbage</h6>
+
+              <div>
+                <b>$12.00</b>
+                <del>$24.00</del>
+              </div>
+
+              <div class="rating my-1">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+
+              <p class="mb-1">Hurry up! Offer ends in:</p>
+
+              <div class="timer">
+                <span>01<small>DAYS</small></span>
+                <span>23<small>HOURS</small></span>
+                <span>34<small>MINS</small></span>
+                <span>57<small>SECS</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 SMALL PRODUCTS -->
+        <div class="col-lg-7 col-12">
+          <div class="row g-2">
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="12"
+              data-name="Chinese cabbage"
+              data-price="12.00"
+              data-image="assests/images/products/cabbage.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img
+                  src="assests/images/products/cabbage.png"
+                  alt="Chinese cabbage"
+                />
+                <p>Chinese cabbage</p>
+                <b>$12.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="13"
+              data-name="Green Lettuce"
+              data-price="9.00"
+              data-image="assests/images/products/coliflower.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img
+                  src="assests/images/products/coliflower.png"
+                  alt="Green Lettuce"
+                />
+                <p>Green Lettuce</p>
+                <b>$9.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="14"
+              data-name="Eggplant"
+              data-price="34.00"
+              data-image="assests/images/products/bringle.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img src="assests/images/products/bringle.png" alt="Eggplant" />
+                <p>Eggplant</p>
+                <b>$34.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="15"
+              data-name="Fresh Cauliflower"
+              data-price="12.00"
+              data-image="assests/images/products/cabbage2.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img
+                  src="assests/images/products/cabbage2.png"
+                  alt="Fresh Cauliflower"
+                />
+                <p>Fresh Cauliflower</p>
+                <b>$12.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="16"
+              data-name="Green Capsicum"
+              data-price="9.00"
+              data-image="assests/images/products/shimla.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img
+                  src="assests/images/products/shimla.png"
+                  alt="Green Capsicum"
+                />
+                <p>Green Capsicum</p>
+                <b>$9.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-sm-4"
+              data-product-id="17"
+              data-name="Green Chili"
+              data-price="34.00"
+              data-image="assests/images/products/mirchi.png"
+              data-category="Fresh Vegetables"
+            >
+              <div class="small-product">
+                <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+                  ><i class="bi bi-heart"></i
+                ></span>
+                <img
+                  src="assests/images/products/mirchi.png"
+                  alt="Green Chili"
+                />
+                <p>Green Chili</p>
+                <b>$34.00</b>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-1"
+                >
+                  <div class="rating">
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="stars bi bi-star-fill"></i>
+                    <i class="grey-star bi bi-star-fill"></i>
+                  </div>
+                  <div class="cart" title="Add to Cart">
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM 5 PRODUCTS -->
+      <div class="row g-2 mt-3">
+        <div
+          class="five-col p-1"
+          data-product-id="18"
+          data-name="Big Potatoes"
+          data-price="12.00"
+          data-image="assests/images/products/potato.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/potato.png" alt="Big Potatoes" />
+            <p>Big Potatoes</p>
+            <b>$12.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="19"
+          data-name="Corn"
+          data-price="12.00"
+          data-image="assests/images/products/corn.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/corn.png" alt="Corn" />
+            <p>Corn</p>
+            <b>$12.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="20"
+          data-name="Red Chili"
+          data-price="12.00"
+          data-image="assests/images/products/red_shimla.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/red_shimla.png" alt="Red Chili" />
+            <p>Red Chili</p>
+            <b>$12.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="21"
+          data-name="Red Tomatoes"
+          data-price="9.00"
+          data-image="assests/images/products/tomatos.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/tomatos.png" alt="Red Tomatoes" />
+            <p>Red Tomatoes</p>
+            <b>$9.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="22"
+          data-name="Surjapur Mango"
+          data-price="34.00"
+          data-image="assests/images/products/aroo.png"
+          data-category="Fresh Fruit"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/aroo.png" alt="Surjapur Mango" />
+            <p>Surjapur Mango</p>
+            <b>$34.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCOUNT BANNER -->
+    <div class="container pt-5">
+      <div class="row">
+        <div class="discount-banner text-center">
+          <img
+            class="img-fluid w-100"
+            style="border-radius: 8px; max-height: 350px; object-fit: cover"
+            src="assests/images/Discount Bannar.png"
+            alt="Discount Banner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS -->
+    <div class="container pt-5">
+      <div class="row g-3">
+        <div class="heading w-100 mb-2">Featured Products</div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="23"
+          data-name="Green apples"
+          data-price="14.00"
+          data-image="assests/images/products/apple.png"
+          data-category="Fresh Fruit"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <button class="sale-btn">Sale 50%</button>
+            <img src="assests/images/products/apple.png" alt="Green apples" />
+            <p>Green apples</p>
+            <div><b>$14.00</b> <span class="previous-price">$20.99</span></div>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="24"
+          data-name="Fresh Indian Malta"
+          data-price="20.00"
+          data-image="assests/images/products/orange.png"
+          data-category="Fresh Fruit"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/orange.png"
+              alt="Fresh Indian Malta"
+            />
+            <p>Fresh Indian Malta</p>
+            <b>$20.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="25"
+          data-name="Chinese cabbage"
+          data-price="12.00"
+          data-image="assests/images/products/cabbage.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/cabbage.png"
+              alt="Chinese cabbage"
+            />
+            <p>Chinese cabbage</p>
+            <b>$12.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="26"
+          data-name="Green Leettuce"
+          data-price="9.00"
+          data-image="assests/images/products/coliflower.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img
+              src="assests/images/products/coliflower.png"
+              alt="Green Leettuce"
+            />
+            <p>Green Leettuce</p>
+            <b>$9.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="five-col p-1"
+          data-product-id="27"
+          data-name="EggPlant"
+          data-price="34.00"
+          data-image="assests/images/products/bringle.png"
+          data-category="Fresh Vegetables"
+        >
+          <div class="small-product">
+            <span class="wishlist-toggle position-absolute top-0 end-0 p-2"
+              ><i class="bi bi-heart"></i
+            ></span>
+            <img src="assests/images/products/bringle.png" alt="EggPlant" />
+            <p>EggPlant</p>
+            <b>$34.00</b>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div class="rating">
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="stars bi bi-star-fill"></i>
+                <i class="grey-star bi bi-star-fill"></i>
+              </div>
+              <div class="cart" title="Add to Cart">
+                <i class="bi bi-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LATEST NEWS -->
+    <div class="container pt-5">
+      <div class="row g-4 justify-content-center">
+        <div class="heading text-center w-100 mb-2">Latest News</div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <img
+            src="assests/images/blocks/block1.png"
+            class="img-fluid rounded mb-2"
+            alt="News 1"
+          />
+          <div class="icon-text">Food • By Admin • 65 Comments</div>
+          <div class="block-subheading">
+            Curabitur porttitor orci eget neque
+            <div>accumsan venenatis. Nunc fermentum.</div>
+          </div>
+          <a href="#" class="link"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <img
+            src="assests/images/blocks/block2.png"
+            class="img-fluid rounded mb-2"
+            alt="News 2"
+          />
+          <div class="icon-text">Food • By Admin • 65 Comments</div>
+          <div class="block-subheading">
+            Eget lobortis lorem lacinia. Vivamus
+            <div>pharetra semper,</div>
+          </div>
+          <a href="#" class="link"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <img
+            src="assests/images/blocks/block3.png"
+            class="img-fluid rounded mb-2"
+            alt="News 3"
+          />
+          <div class="icon-text">Food • By Admin • 65 Comments</div>
+          <div class="block-subheading">
+            Maecenas blandit risus elementum
+            <div>mauris malesuada.</div>
+          </div>
+          <a href="#" class="link"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLIENT TESTIMONIALS -->
+    <div class="container pt-5">
+      <div class="heading mb-3">Client Testimonials</div>
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <div class="client-block">
+            <img
+              src="assests/images/blocks/Vectorcomma.png"
+              class="mb-3"
+              alt="Quote"
+            />
+            <div class="block-text mb-3">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="assests/images/blocks/Imageicon1.png"
+                  alt="Robert Fox"
+                />
+                <div>
+                  <div class="icon-name">Robert Fox</div>
+                  <div class="name.review">Customer</div>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="client-block">
+            <img
+              src="assests/images/blocks/Vectorcomma.png"
+              class="mb-3"
+              alt="Quote"
+            />
+            <div class="block-text mb-3">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="assests/images/blocks/Imageicon2.png"
+                  alt="Dianne Russell"
+                />
+                <div>
+                  <div class="icon-name">Dianne Russell</div>
+                  <div class="name.review">Customer</div>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="client-block">
+            <img
+              src="assests/images/blocks/Vectorcomma.png"
+              class="mb-3"
+              alt="Quote"
+            />
+            <div class="block-text mb-3">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="assests/images/blocks/Imageicon3.png"
+                  alt="Eleanor Pena"
+                />
+                <div>
+                  <div class="icon-name">Eleanor Pena</div>
+                  <div class="name.review">Customer</div>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGOS & INSTAGRAM -->
+    <div class="pt-5 text-center">
+      <div class="container mb-4">
+        <img
+          class="img-fluid"
+          src="assests/images/blocks/Company Logo.png"
+          alt="Company Logos"
+        />
+      </div>
+      <img
+        class="img-fluid w-100"
+        src="assests/images/blocks/Follow us on Instagram.png"
+        alt="Instagram Feed"
+      />
+    </div>
+
+    <!-- RESPONSIVE CLICKABLE FOOTER -->
+    <div class="container-fluid p-0 mt-5">
+      <!-- NEWSLETTER BAR -->
+      <div class="newsletter-sec">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-5 col-12 text-center text-lg-start">
+              <h4>Subcribe our Newsletter</h4>
+              <p>
+                Pellentesque eu nibh eget mauris congue mattis mattis nec
+                tellus. Phasellus imperdiet elit eu magna.
+              </p>
+            </div>
+            <div class="col-lg-5 col-12">
+              <form id="newsletterForm">
+                <div class="newsletter-input-group">
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-2 col-12 text-center text-lg-end">
+              <div class="social-icons">
+                <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" title="Pinterest"
+                  ><i class="bi bi-pinterest"></i
+                ></a>
+                <a href="#" title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN DARK FOOTER -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Brand Info -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="logo mb-3" style="color: #00b207">
+                🌿 <span style="color: #fff">EcoBazar</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6">
+                Morbi cursus porttitor enim lobortis molestie. Duis gravida
+                turpis dui, eget bibendum magna congue nec.
+              </p>
+              <div class="mt-3">
+                <a href="tel:2195550114" class="footer-contact-link fw-bold"
+                  >(219) 555-0114</a
+                >
+                <span class="mx-1">or</span>
+                <a
+                  href="mailto:Proxy@gmail.com"
+                  class="footer-contact-link fw-bold"
+                  >Proxy@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <!-- My Account -->
+            <div class="col-6 col-md-3 col-lg-2 ms-lg-auto">
+              <h6>My Account</h6>
+              <ul>
+                <li><a href="#" class="footer-link-auth">My Account</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Order History feature coming soon!"
+                    >Order History</a
+                  >
+                </li>
+                <li><a href="#" class="footer-link-cart">Shoping Cart</a></li>
+                <li><a href="#" class="footer-link-wishlist">Wishlist</a></li>
+              </ul>
+            </div>
+
+            <!-- Helps -->
+            <div class="col-6 col-md-3 col-lg-2">
+              <h6>Helps</h6>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Contact us at (219) 555-0114"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Frequently Asked Questions page coming soon!"
+                    >Faqs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Terms & Conditions view"
+                    >Terms & Condition</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Privacy Policy view"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Proxy -->
+            <div class="col-6 col-md-3 col-lg-2">
+              <h6>Proxy</h6>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="About EcoBazar Store"
+                    >About</a
+                  >
+                </li>
+                <li><a href="#" class="footer-link-shop">Shop</a></li>
+                <li><a href="#" class="footer-link-shop">Product</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link-toast"
+                    data-msg="Track Order feature coming soon!"
+                    >Track Order</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-6 col-md-3 col-lg-2">
+              <h6>Categories</h6>
+              <ul>
+                <li>
+                  <a href="#" class="footer-link-shop">Fruit & Vegetables</a>
+                </li>
+                <li><a href="#" class="footer-link-shop">Meat & Fish</a></li>
+                <li><a href="#" class="footer-link-shop">Bread & Bakery</a></li>
+                <li>
+                  <a href="#" class="footer-link-shop">Beauty & Health</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div
+            class="site-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+          >
+            <div>Ecobazar eCommerce © 2021. All Rights Reserved</div>
+            <div class="payment-badges d-flex align-items-center gap-2">
+              <span class="badge bg-dark border p-2"
+                ><i class="bi bi-apple me-1"></i> Pay</span
+              >
+              <span class="badge bg-dark border p-2">VISA</span>
+              <span class="badge bg-dark border p-2">DISCOVER</span>
+              <span class="badge bg-dark border p-2">MasterCard</span>
+              <span class="badge bg-dark border p-2"
+                ><i class="bi bi-shield-lock me-1"></i> Secure Payment</span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- CART OFFCANVAS DRAWER -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+          🛒 Shopping Cart (<span id="cartItemCount">0</span>)
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="cartItemsContainer" class="flex-grow-1 overflow-auto">
+          <!-- Cart Items populated via JS -->
+        </div>
+        <div class="border-top pt-3 mt-3">
+          <div class="d-flex justify-content-between fs-5 fw-bold mb-3">
+            <span>Subtotal:</span>
+            <span id="cartSubtotal" class="text-success">$0.00</span>
+          </div>
+          <button
+            class="btn btn-success w-100 py-2 fw-semibold rounded-pill"
+            onclick="placeOrder()"
+          >
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT QUICK VIEW MODAL -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center">
+                <img
+                  id="modalProductImg"
+                  src=""
+                  class="img-fluid rounded"
+                  style="max-height: 280px; object-fit: contain"
+                  alt="Product Details"
+                />
+              </div>
+              <div class="col-md-6 mt-3 mt-md-0">
+                <span id="modalProductCategory" class="badge bg-success mb-2"
+                  >Category</span
+                >
+                <h3 id="modalProductName" class="fw-bold mb-2">Product Name</h3>
+                <div class="rating mb-2" id="modalProductRating">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div
+                  class="h4 text-success fw-bold mb-3"
+                  id="modalProductPrice"
+                >
+                  $0.00
+                </div>
+                <p class="text-muted small mb-4">
+                  Fresh organic produce sourced directly from trusted local
+                  farms. 100% natural, healthy, and delicious.
+                </p>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <label class="fw-bold me-2">Quantity:</label>
+                  <div class="input-group style-qty" style="width: 120px">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      id="modalQtyMinus"
+                    >
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control form-control-sm text-center"
+                      id="modalQtyInput"
+                      value="1"
+                      readonly
+                    />
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      id="modalQtyPlus"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <button
+                  id="modalAddToCartBtn"
+                  class="btn btn-success px-4 py-2 rounded-pill fw-semibold w-100"
+                >
+                  <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGN IN / SIGN UP AUTH MODAL -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <ul class="nav nav-tabs border-0" id="authTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active fw-bold text-success"
+                  id="signin-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#signin-pane"
+                  type="button"
+                >
+                  Sign In
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link fw-bold text-success"
+                  id="signup-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#signup-pane"
+                  type="button"
+                >
+                  Register
+                </button>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="tab-content" id="authTabContent">
+              <!-- Sign In Pane -->
+              <div
+                class="tab-pane fade show active"
+                id="signin-pane"
+                role="tabpanel"
+              >
+                <form id="signInForm">
+                  <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      id="loginEmail"
+                      class="form-control"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input
+                      type="password"
+                      id="loginPassword"
+                      class="form-control"
+                      placeholder="••••••••"
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 rounded-pill fw-bold"
+                  >
+                    Sign In
+                  </button>
+                </form>
+              </div>
+              <!-- Register Pane -->
+              <div class="tab-pane fade" id="signup-pane" role="tabpanel">
+                <form id="signUpForm">
+                  <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="••••••••"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 rounded-pill fw-bold"
+                  >
+                    Create Account
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      style="z-index: 1100"
+    >
+      <div
+        id="shoperyToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body" id="toastMessage">Item added to cart!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Application JS -->
+    <script src="assests/main.js"></script>
+    <script>
+      fetch('http://127.0.0.1:8000/api/products/')
+        .then(response => response.json())
+        .then(products => {
+          const productCards = document.querySelectorAll('.five-col')
+
+          products.forEach((product, index) => {
+            if (productCards[index]) {
+              productCards[index].setAttribute('data-product-id', product.id)
+              productCards[index].setAttribute('data-name', product.name)
+              productCards[index].setAttribute('data-price', product.price)
+              productCards[index].setAttribute('data-image', product.image)
+              productCards[index].setAttribute(
+                'data-category',
+                product.category
+              )
+
+              productCards[index].querySelector('img').src = product.image
+              productCards[index].querySelector('.img-name').textContent =
+                product.name
+              productCards[index].querySelector('.price').innerHTML =
+                '$' + product.price
+            }
+          })
+        })
+        .catch(error => {
+          console.log('Error:', error)
+        })
+
+      document
+        .getElementById('signInForm')
+        .addEventListener('submit', function (event) {
+          event.preventDefault()
+
+          const email = document.getElementById('loginEmail').value
+          const password = document.getElementById('loginPassword').value
+
+          fetch('http://127.0.0.1:8000/api/login/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              username: email,
+              password: password
+            })
+          })
+            .then(response => response.json())
+            .then(data => {
+              alert(data.message)
+            })
+            .catch(error => {
+              console.log('Error:', error)
+              alert('Something went wrong')
+            })
+        })
+    </script>
+  </body>
+</html>
